@@ -1,0 +1,81 @@
+$color_1: black;
+$color_2: white;
+$font-family_1: 'Nerko One', cursive;
+$background-color_1: rgb(255, 255, 255);
+$background-color_2: #ffffff;
+$background-color_3: white;
+$background-color_4: #008CBA;
+$background-color_5: #4CAF50;
+
+.main.p {
+	margin: 0px;
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+	
+}
+button {
+	font-size: 16px;
+	text-align: center;
+	border-radius: 8px;
+	padding: 10px 20px;
+}
+.page-nav {
+	background-color: $background-color_2;
+	border: 1px solid rgb(255, 255, 255);
+	position: relative;
+	h1 {
+		margin: 20px;
+	}
+}
+.button-checkout {
+	background-color: $background-color_3;
+	color: $color_1;
+	border: 2px solid #008CBA;
+	transition-duration: 0.4s;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	&:hover {
+		background-color: $background-color_4;
+		color: $color_2;
+	}
+}
+.page-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.product-container {
+	margin: 15px;
+	padding: 2px 16px;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+	background-color: $background-color_3;
+	
+	
+    
+    
+	&:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+	img {
+		width: 300px;
+	}
+	h1 {
+		margin-bottom: 10px;
+		margin-left: 15px;
+	}
+}
+.button-add {
+	background-color: $background-color_3;
+	color: $color_1;
+	border: 2px solid #4CAF50;
+	transition-duration: 0.4s;
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+	&:hover {
+		background-color: $background-color_5;
+		color: $color_2;
+	}
+}
